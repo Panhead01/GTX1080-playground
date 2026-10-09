@@ -4,7 +4,7 @@ Boss's order of priority applies; nothing here is started until he says so.
 
 ## Share Gitea with someone outside the network (added 9 Oct 2026)
 
-Boss wants to share his Git with a person outside his network. Not started. Needs from Boss: which repo, and who (their email).
+Boss wants to share his Git with a person outside his network. **Decided 9 Oct 2026 (Boss, evening):** `hermes-build` and `GTX1080-playground` become Public repositories, reachable at `git.cmdr-flash.com` through a Cloudflare Tunnel with a Cloudflare Access policy that allows exactly one email (One-time PIN). No separate Gitea account for the reader: a public repo is read-only for anyone without an account, so the one PIN login is the whole gate. `workstation` stays private (it is the infrastructure map). Gitea's `REQUIRE_SIGNIN_VIEW` goes off so the reader can view without a Gitea login; registration stays off. A content scan of all three repos on 9 Oct found no secrets, emails, phone numbers or surnames (LAN addresses, hostnames and usernames are present and accepted). Steps with exact values: `~/Documents/Workstation/Gitea/git-tunnel-access-steps-2026-10-09.md` (use the short variant). Still needed from Boss: the person's email, and the hand steps (snapshot CT 211, Access app, cloudflared, tunnel, app.ini, repo visibility).
 
 | Option | How | Pros | Cons |
 |---|---|---|---|
